@@ -1,0 +1,28 @@
+<app-default-login-layout
+  title="Login into your account"
+  primaryButtonText="Login Now"
+  secondaryButtonText="Sign up"
+>
+  <form [formGroup]="loginForm">
+    <app-primary-input
+      formControlName="email"
+      inputName="email"
+      type="email"
+      label="Email"
+      placeholder="batatinhafrita123@email.com"
+    >
+      <img ngSrc="/assets/Icons/email.svg" alt="email icon" height="18" width="20"/>
+    </app-primary-input>
+
+    <app-primary-input
+      formControlName="password"
+      inputName="password"
+      type="password"
+      label="Your Password"
+      placeholder="Type your password here"
+    >
+      <img ngSrc="/assets/Icons/locker.svg" alt="password icon" height="20" width="18"/>
+    </app-primary-input>
+    <span>Forgot Password?</span>
+  </form>
+</app-default-login-layout>

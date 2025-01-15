@@ -1,0 +1,98 @@
+@import "../../../styles/variables.scss";
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-section {
+    flex-grow: 1;
+    background: linear-gradient(to right, $background-medium, $background-dark);
+
+    .logo {
+      height: 450px;
+      width: 450px;
+    }
+  }
+
+  .form-section {
+    flex-grow: 0.3;
+    padding: 0 35px;
+    background-color: $background-light;
+    box-shadow: -10px 0 50px -10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+  }
+
+  img {
+    height: 80px;
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 45px;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+
+      font-size: 14px;
+      color: $background-medium;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      div {
+        flex-grow: 1;
+        height: 2px;
+        background-color: $background-medium;
+      }
+    }
+
+    button {
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      background: transparent;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+
+      &.login-button {
+        background-color: $primaryColor;
+        color: white;
+        box-shadow: 0 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
+      }
+
+      &.signup-button {
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+      }
+    }
+  }
+}
