@@ -35,6 +35,14 @@ main {
       width: 450px;
       z-index: 1;
     }
+
+    @media (max-width: 783px) {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 
   .form-section {
@@ -44,9 +52,23 @@ main {
     box-shadow: -10px 0 50px -10px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 1;
+
+    @media (max-width: 783px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
   }
 
-  img {
+  .horizontal-logo {
     height: 80px;
     width: 250px;
     margin-bottom: 30px;
