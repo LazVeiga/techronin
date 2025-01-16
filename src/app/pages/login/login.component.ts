@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {DefaultLoginLayoutComponent} from "../../components/default-login-layout/default-login-layout.component";
+import {DefaultLoginLayoutComponent} from "../../components/templates/default-login-layout/default-login-layout.component";
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
-import {PrimaryInputComponent} from "../../components/primary-input/primary-input.component";
+import {PrimaryInputComponent} from "../../components/templates/primary-input/primary-input.component";
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
