@@ -1,0 +1,37 @@
+@import "../../../styles/variables";
+
+.forbidden-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: $backgroundLightFade url('/assets/gifs/sakura.gif') no-repeat;
+  text-align: center;
+}
+
+.error-code h1 {
+  font-size: 10rem;
+  color: $secondaryColor;
+}
+
+.error-message h2 {
+  font-size: 2rem;
+  color: $textMedium;
+}
+
+.error-message p {
+  font-size: 1.2rem;
+  color: $textLight;
+}
+
+.back-link {
+  margin-top: 20px;
+  text-decoration: none;
+  color: $specialColor;
+  font-size: 1rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
